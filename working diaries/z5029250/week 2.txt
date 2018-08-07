@@ -3,3 +3,6 @@ Week 2 conclusion:
 2.we decide to choose the first topic "chat rob" as our topic.
 3.we learn from the internet about this topic and talk about this.
 Week 3 plan:
+1.finish the proposal.
+2.set up the project and text some api.
+3.study the AIML.
