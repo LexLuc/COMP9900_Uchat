@@ -1,0 +1,4 @@
+1. Brianstrom on the project(aim, module, technical algorithms and tools)
+2. Design our proposal on project 1 
+3. Discuss the main epics and functional modules of project
+4. learn online materials related to this project
