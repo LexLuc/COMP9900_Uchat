@@ -1,0 +1,6 @@
+Summary:
+finished the proposal'part "background".
+editted the whole proposal with other teammates.
+Plan:
+To set up the code enviroment.
+To learn how to grab data from website using python.
