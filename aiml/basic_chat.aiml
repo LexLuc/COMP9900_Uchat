@@ -1,0 +1,73 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <!-- A simple question and answer-->
+    <category>
+        <pattern>WHO ARE YOU</pattern>
+        <template>
+            I'm a bot, silly!
+        </template>
+    </category>
+
+
+    <!-- deal with Synonyms -->
+    <category>
+        <pattern>HELLO</pattern>
+        <template>Hi there!</template>
+    </category>
+
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>HI THERE</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>HOWDY</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <category>
+        <pattern>HOLA</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+
+
+    <!-- Conditionals -->
+
+   <category>
+      <pattern> HOW ARE YOU FEELING TODAY </pattern>
+      
+      <template>
+         <think><set name = "state">happy</set></think>
+         <condition name = "state" value = "happy">
+            I am happy!
+         </condition>
+         
+         <condition name = "state" value = "sad">
+            I am sad!
+         </condition>
+      </template>
+      
+   </category>
+
+
+   <!-- set predicates -->
+   <category>
+      <pattern>MY DOGS NAME IS *</pattern>
+      <template>
+         That is interesting that you have a dog named <set name="dog"><star/></set>
+      </template>  
+   </category>  
+   <category>
+      <pattern>WHAT IS MY DOGS NAME</pattern>
+      <template>
+         Your dog's name is <get name="dog"/>.
+      </template>  
+   </category>      
+</aiml>
