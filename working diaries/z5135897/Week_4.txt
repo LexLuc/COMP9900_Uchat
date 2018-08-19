@@ -1,3 +1,7 @@
 This week, we started our project comprehensively. I learned something about AIML and wrote some files in Python. These files provided
 
 some basic things in AIML, for example the grammer, the structure...
+
+
+Sunday 19, Aug
+Add Frequently asked questions into aiml file. Up to now, it is very basic, later will be more "smart".
