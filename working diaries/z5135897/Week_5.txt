@@ -1,0 +1,11 @@
+This week, I updated the FAQ.aiml. This file is the knowledge base of our chatbot. Now the chatbot can handle FAQ questions in CSE website
+
+more smart.
+
+The order of the key words in query does not matter.
+
+The input query can be more variable, but with key words.
+
+Add one simple default response for unknown questions.
+
+Later natural language processing can be used to extract kek words, or get synonyms, etc.
