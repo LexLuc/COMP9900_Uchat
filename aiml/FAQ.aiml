@@ -6,19 +6,163 @@
 	<template>Hi <star/>. I am also <star index="2" /> years old!</template>
 	</category>
 
+
 	<category>
-	<pattern> * FULL *</pattern>
+	<pattern>* FULL</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>FULL *</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* FULL *</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>FULL</pattern>
 	<template>If the class you want is full, you may email an expression of interest to the Lecturer in Charge and they may consider adding more places. If the full course is core and you need it to graduate, you can submit a Full Class request form. Overall, please check myUNSW regularly in the event that someone drops the course. Note that myUNSW is the most up-to-date list of enrolments. There is generally a lot of enrolment movement around Week 1 of each Semester. Unfortunately, we do not over-enrol CSE courses and there is no waiting list.</template>
 	</category>
 
 
+
+
 	<category>
-	<pattern>* WEB * TIMETABLE *</pattern>
-	<template>If you have enrolled in the web lecture then this will not be listed in your Class Timetable as there will be no room allocated to this lecture. If you scroll down the bottom of the Class Schedule Summary you will see the lecture listed as 'WEB' and under Day/Time you will see 'TBA'. You are required to listen to the lecture recordings in your own time and place.</template>
+	<pattern>* WEB *</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
 	</category>
 
 	<category>
+	<pattern>* WEB</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>WEB *</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>WEB *</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>WEB * TIMETABLE *</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* WEB * TIMETABLE</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>WEB * TIMETABLE</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* WEB * TIMETABLE *</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* TIMETABLE * WEB *</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>TIMETABLE * WEB *</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* TIMETABLE * WEB</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>TIMETABLE * WEB</pattern>
+	<template><srai>WEB TIMETABLE</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>WEB TIMETABLE</pattern>
+	<template>If you have enrolled in the web lecture then this will not be listed in your Class Timetable as there will be no room allocated to this lecture. If you scroll down the bottom of the Class Schedule Summary you will see the lecture listed as 'WEB' and under Day/Time you will see 'TBA'. You are required to listen to the lecture recordings in your own time and place.</template>
+	</category>
+
+
+
+	<category>
 	<pattern>* REQUISITE WAIVED *</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* REQUISITE WAIVED</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>REQUISITE WAIVED *</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* WAIVE REQUISITE *</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* WAIVE REQUISITE</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>WAIVE REQUISITE *</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+
+
+	<category>
+	<pattern>* WAIVE * REQUISITE *</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>REQUISITE WAIVED</pattern>
 	<template>Waivers are generally not approved for core courses or in cases where the requisite is a core course in your program or in the case of postgraduate students where transfer credit or exemption is available. Please visit the CSE Requisite Waiver Policy page for more details.
 	If the requisite is not a core course and you'd like it to be waived to enrol in an Elective, requisite waivers may be considered on the basis of the following:
 	Requisite course was completed on exchange or cross-institutional study
@@ -35,22 +179,152 @@
 	If the Lecturer supports your request, please submit a Requisite Waiver request form.</template>
 	</category>
 
+
+
+	<category>
+	<pattern>TIMETABLE CLASH</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+
 	<category>
 	<pattern>* TIMETABLE CLASH *</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* TIMETABLE * CLASH *</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>CLASH TIMETABLE</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* CLASH TIMETABLE *</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* CLASH * TIMETABLE *</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* CLASH * TIMETABLE *</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* CLASH *</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* CLASH</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>CLASH *</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>CLASH</pattern>
+	<template><srai>TIMETABLE CLASH</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>TIMETABLE CLASH</pattern>
 	<template>For all timetable clashes please ensure you meet the requirements listed on the Faculty Enrolment Rules website.
 	Provided you meet all of the requirements you may submit a Timetable clash request form.</template>
 	</category>
 
+
+
 	<category>
 	<pattern>* OVERLOAD *</pattern>
+	<template><srai>OVERLOAD</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* OVERLOAD</pattern>
+	<template><srai>OVERLOAD</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>OVERLOAD *</pattern>
+	<template><srai>OVERLOAD</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>OVERLOAD</pattern>
 	<template>You may submit an overloading request using the online Overloading request form only if you meet the requirements listed on the Faculty Enrolment Rules website.
 
 	You must also be aware of the financial and academic deadlines for dropping a course.</template>
 	</category>
 
 
+
+
+
 	<category>
 	<pattern>* ENROLMENT DEADLINE *</pattern>
+	<template><srai>ENROLMENT DEADLINE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>ENROLMENT DEADLINE *</pattern>
+	<template><srai>ENROLMENT DEADLINE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* ENROLMENT DEADLINE</pattern>
+	<template><srai>ENROLMENT DEADLINE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* DEADLINE *</pattern>
+	<template><srai>ENROLMENT DEADLINE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>DEADLINE *</pattern>
+	<template><srai>ENROLMENT DEADLINE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern> * DEADLINE</pattern>
+	<template><srai>ENROLMENT DEADLINE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>ENROLMENT DEADLINE</pattern>
 	<template>Managing your enrolment is your responsibility. You must be correctly enrolled in your courses by the enrolment deadline each semester. The deadline for adding courses is the end of the first week of the teaching period in which the course is offered. Adding courses after enrolments have closed is not normally permitted as it is required that students attend no less than 80% of classes.
 
 	If, due to exceptional circumstances, you need to request late enrolment for a course, you may be charged a late enrolment fee of $250. It is important that you familiarise yourself with the Late Enrolment Changes policy and also the enrolment deadlines, which can be found on the Key Dates website.
@@ -61,8 +335,79 @@
 	</template>
 	</category>
 
+
+
+
 	<category>
-	<pattern>* PROGRESSION CHECK *</pattern>
+	<pattern>* PROGRESSION CHECK * </pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>PROGRESSION CHECK * </pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* PROGRESSION CHECK</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* PROGRESSION *</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* PROGRESSION</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>PROGRESSION *</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* PROGRESS *</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* PROGRESS</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>PROGRESS *</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>PROGRESS</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>PROGRESSION</pattern>
+	<template><srai>PROGRESSION CHECK</srai>
+	</template>
+	</category>
+
+
+
+	<category>
+	<pattern>PROGRESSION CHECK</pattern>
 	<template>Progression checks are now available online for students who commenced their studies in 2015 onwards. Please visit our Progression Check page for details.
 
 	If you commenced your studies prior to 2015 and are not in 3978, please submit an Online Program Progression check request form.
@@ -70,8 +415,59 @@
 	</category>
 
 
+
+
+
 	<category>
-	<pattern>* COURSE * SUBSTITUTED *</pattern>
+	<pattern>SUBSTITUTED</pattern>
+	<template><srai>COURSE SUBSTITUTED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* SUBSTITUTED</pattern>
+	<template><srai>COURSE SUBSTITUTED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>SUBSTITUTED *</pattern>
+	<template><srai>COURSE SUBSTITUTED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern> * SUBSTITUTED *</pattern>
+	<template><srai>COURSE SUBSTITUTED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>SUBSTITUTE</pattern>
+	<template><srai>COURSE SUBSTITUTED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern> * SUBSTITUTE * </pattern>
+	<template><srai>COURSE SUBSTITUTED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern> * SUBSTITUTE</pattern>
+	<template><srai>COURSE SUBSTITUTED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>SUBSTITUTE *</pattern>
+	<template><srai>COURSE SUBSTITUTED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>COURSE SUBSTITUTED</pattern>
 	<template>The CSE student office does not generally permit substitution requests as core courses are necessary towards accreditation.
 
 	Please review the Faculty Enrolment Rules regarding substitutions.
@@ -82,21 +478,104 @@
 	</template>
 	</category>
 
+
+
+
+
+
+
+
+
 	<category>
-	<pattern>* SPECIAL CONSIDERATION *</pattern>
-	<template>You can apply for special consideration when illness or other circumstances beyond your control, interfere with your assessment performance. An application for Special Consideration together with supporting documentation must be submitted online within 3 working days of the assessment or the period covered by the supporting documentation. In exceptional circumstances an application may be accepted outside these limits. For further information please see the Special Consideration website.
+	<pattern>SPECIAL</pattern>
+	<template><srai>SPECIAL CONSIDERATION</srai>
 	</template>
 	</category>
 
 	<category>
-	<pattern>* SUPPLEMENTARY EXAM</pattern>
+	<pattern> * SPECIAL</pattern>
+	<template><srai>SPECIAL CONSIDERATION</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>SPECIAL * </pattern>
+	<template><srai>SPECIAL CONSIDERATION</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern> * SPECIAL * </pattern>
+	<template><srai>SPECIAL CONSIDERATION</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>SPECIAL CONSIDERATION</pattern>
+	<template>You can apply for special consideration when illness or other circumstances beyond your control, interfere with your assessment performance. An application for Special Consideration together with supporting documentation must be submitted online within 3 working days of the assessment or the period covered by the supporting documentation. In exceptional circumstances an application may be accepted outside these limits. For further information please see the Special Consideration website.
+	</template>
+	</category>
+
+
+
+
+	<category>
+	<pattern> * SUPPLEMENTARY * </pattern>
+	<template><srai>SUPPLEMENTARY EXAM</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>SUPPLEMENTARY * </pattern>
+	<template><srai>SUPPLEMENTARY EXAM</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern> * SUPPLEMENTARY</pattern>
+	<template><srai>SUPPLEMENTARY EXAM</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>SUPPLEMENTARY EXAM</pattern>
 	<template>Please see the CSE website for Essential Advice for Students if you believe that you may be eligible to sit for the CSE supplementary exam. Please note, the supplementary exam for school managed written exams is scheduled for Wednesday 6th December at 8:45 AM. Students who have been nominated to sit for the exam by their Lecturer will receive the notification via email at least 1-2 days prior to the exam. It is advised that you make yourself available on the date and time listed above if you expect to sit for the exam.
 	</template>
 	</category>
 
 
+
+
 	<category>
-	<pattern>* REVIEW RESULTS * </pattern>
+	<pattern> * REVIEW *</pattern>
+	<template><srai>REVIEW RESULTS</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern> * REVIEW</pattern>
+	<template><srai>REVIEW RESULTS</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>REVIEW *</pattern>
+	<template><srai>REVIEW RESULTS</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>REVIEW</pattern>
+	<template><srai>REVIEW RESULTS</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>REVIEW RESULTS</pattern>
 	<template>To apply for a review of results for any assessments, please submit a Review of Results Application to your Lecturer in Charge.
 
 	After the lecturer in charge has made a recommendation, the form will then need to be sent to Student Central no later than 15 days after the release of results. Student Central will then notify you of the outcome.
@@ -132,7 +611,39 @@
 	</category>
 
 	<category>
+	<pattern>* REFERRAL</pattern>
+	<template><srai>ACADEMIC STANDING</srai></template>
+	</category>
+
+	<category>
+	<pattern>REFERRAL * </pattern>
+	<template><srai>ACADEMIC STANDING</srai></template>
+	</category>
+
+	<category>
+	<pattern>REFERRAL</pattern>
+	<template><srai>ACADEMIC STANDING</srai></template>
+	</category>
+
+
+
+	<category>
 	<pattern>* PROBATION * </pattern>
+	<template><srai>ACADEMIC STANDING</srai></template>
+	</category>
+
+	<category>
+	<pattern>* PROBATION</pattern>
+	<template><srai>ACADEMIC STANDING</srai></template>
+	</category>
+
+	<category>
+	<pattern>PROBATION * </pattern>
+	<template><srai>ACADEMIC STANDING</srai></template>
+	</category>
+
+	<category>
+	<pattern>PROBATION</pattern>
 	<template><srai>ACADEMIC STANDING</srai></template>
 	</category>
 
@@ -151,7 +662,27 @@
 	</category>
 
 	<category>
+	<pattern>* WD</pattern>
+	<template><srai>RESULT</srai></template>
+	</category>
+
+	<category>
+	<pattern>WD * </pattern>
+	<template><srai>RESULT</srai></template>
+	</category>
+
+	<category>
 	<pattern>* WC * </pattern>
+	<template><srai>RESULT</srai></template>
+	</category>
+
+	<category>
+	<pattern>* WC</pattern>
+	<template><srai>RESULT</srai></template>
+	</category>
+
+	<category>
+	<pattern>WC * </pattern>
 	<template><srai>RESULT</srai></template>
 	</category>
 
@@ -159,6 +690,24 @@
 	<pattern>* WJ * </pattern>
 	<template><srai>RESULT</srai></template>
 	</category>
+
+	<category>
+	<pattern>* WJ</pattern>
+	<template><srai>RESULT</srai></template>
+	</category>
+
+	<category>
+	<pattern>WJ * </pattern>
+	<template><srai>RESULT</srai></template>
+	</category>
+
+
+
+	<category>
+	<pattern> * </pattern>
+	<template>I have no answer for that.</template>
+	</category>
+
 
 
 
