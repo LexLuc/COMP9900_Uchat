@@ -1,5 +1,4 @@
 This week, I updated the FAQ.aiml. This file is the knowledge base of our chatbot. Now the chatbot can handle FAQ questions in CSE website
-
 more smart.
 
 The order of the key words in query does not matter.
