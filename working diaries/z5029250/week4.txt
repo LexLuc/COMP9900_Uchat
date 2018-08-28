@@ -1,0 +1,8 @@
+finished:
+1.learn format of AIML.
+2.change DATA to the format of AIML
+3.test the function of rob
+plan for week 4:
+1.continue to learn AIML
+2.classify FAQ contents according to the topic
+3.optimize FAQ file
