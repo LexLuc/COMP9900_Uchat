@@ -1,0 +1,29 @@
+$ python3.6 run.py 
+
+Loading std-startup.xml...done (0.09 seconds)
+Loading FAQ.aiml...done (0.01 seconds)
+Loading ai.aiml...done (0.01 seconds)
+
+Input:I have a timetable clash
+For all timetable clashes please ensure you meet the requirements listed on the Faculty Enrolment Rules website. Provided you meet all of the requirements you may submit a Timetable clash request form.
+
+Input:timetable clash
+For all timetable clashes please ensure you meet the requirements listed on the Faculty Enrolment Rules website. Provided you meet all of the requirements you may submit a Timetable clash request form.
+
+Input:clash timetable
+For all timetable clashes please ensure you meet the requirements listed on the Faculty Enrolment Rules website. Provided you meet all of the requirements you may submit a Timetable clash request form.
+
+Input:special consideration how to request
+You can apply for special consideration when illness or other circumstances beyond your control, interfere with your assessment performance. An application for Special Consideration together with supporting documentation must be submitted online within 3 working days of the assessment or the period covered by the supporting documentation. In exceptional circumstances an application may be accepted outside these limits. For further information please see the Special Consideration website.
+
+Input:What should I do if I have referral
+If your academic standing is anything other than GOOD, you are encouraged to consult with an Academic Advisor. To arrange an appointment: Complete SECTION 1 of the Academic Standing Interview form Arrange an appointment with your Academic Advisor by email and attach the form. Your Academic Advisor is listed in Section 4 of the Academic Standing Interview form. Please also see the below contact list: Bioinformatics: Bruno Gaeta - bgaeta@cse.unsw.edu.au Computer Science: Alan Blair - blair@cse.unsw.edu.au Computer Engineering: Annie Guo - huig@cse.unsw.edu.au Software Engineering: Fethi Rabhi - f.rabhi@unsw.edu.au Postgraduate Programs: Dr Eric Martin - emartin@cse.unsw.edu.au
+
+
+
+Input:what is supplementary exam
+Please see the CSE website for Essential Advice for Students if you believe that you may be eligible to sit for the CSE supplementary exam. Please note, the supplementary exam for school managed written exams is scheduled for Wednesday 6th December at 8:45 AM. Students who have been nominated to sit for the exam by their Lecturer will receive the notification via email at least 1-2 days prior to the exam. It is advised that you make yourself available on the date and time listed above if you expect to sit for the exam.
+
+
+Input:I bet you don't know this
+I have no answer for that.
