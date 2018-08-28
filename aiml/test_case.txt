@@ -27,3 +27,33 @@ Please see the CSE website for Essential Advice for Students if you believe that
 
 Input:I bet you don't know this
 I have no answer for that.
+
+
+Input:how to check progression
+Progression checks are now available online for students who commenced their studies in 2015 onwards. Please visit our Progression Check page for details. If you commenced your studies prior to 2015 and are not in 3978, please submit an Online Program Progression check request form.
+
+Input:what should I do to check my progress
+Progression checks are now available online for students who commenced their studies in 2015 onwards. Please visit our Progression Check page for details. If you commenced your studies prior to 2015 and are not in 3978, please submit an Online Program Progression check request form.
+
+Input:What is WD
+If you have received a WD grade, this means that your result has not been finalised. As we are not aware of the reasons you have received this grade, we would recommend that you contact the lecturer in charge of that course no more than 5 days after the release of results, as it might be necessary to organise further assessment. Please see the Student Results page for further information on any other grades you may have received but are not sure of the meaning of.
+
+Input:probation what is that
+If your academic standing is anything other than GOOD, you are encouraged to consult with an Academic Advisor. To arrange an appointment: Complete SECTION 1 of the Academic Standing Interview form Arrange an appointment with your Academic Advisor by email and attach the form. Your Academic Advisor is listed in Section 4 of the Academic Standing Interview form. Please also see the below contact list: Bioinformatics: Bruno Gaeta - bgaeta@cse.unsw.edu.au Computer Science: Alan Blair - blair@cse.unsw.edu.au Computer Engineering: Annie Guo - huig@cse.unsw.edu.au Software Engineering: Fethi Rabhi - f.rabhi@unsw.edu.au Postgraduate Programs: Dr Eric Martin - emartin@cse.unsw.edu.au
+
+Input:I want to review my results
+To apply for a review of results for any assessments, please submit a Review of Results Application to your Lecturer in Charge. After the lecturer in charge has made a recommendation, the form will then need to be sent to Student Central no later than 15 days after the release of results. Student Central will then notify you of the outcome. Please read the form carefully and note that a review of results may lead to a mark going up or down. Further information may be found at: https://student.unsw.edu.au/results
+
+
+Input:Can I overload
+You may submit an overloading request using the online Overloading request form only if you meet the requirements listed on the Faculty Enrolment Rules website. You must also be aware of the financial and academic deadlines for dropping a course.
+
+
+Input:the class that I want to enrol is full, what should I do
+If the class you want is full, you may email an expression of interest to the Lecturer in Charge and they may consider adding more places. If the full course is core and you need it to graduate, you can submit a Full Class request form. Overall, please check myUNSW regularly in the event that someone drops the course. Note that myUNSW is the most up-to-date list of enrolments. There is generally a lot of enrolment movement around Week 1 of each Semester. Unfortunately, we do not over-enrol CSE courses and there is no waiting list.
+
+
+Input:I am in web class, where can I see this in my class timetable
+If you have enrolled in the web lecture then this will not be listed in your Class Timetable as there will be no room allocated to this lecture. If you scroll down the bottom of the Class Schedule Summary you will see the lecture listed as 'WEB' and under Day/Time you will see 'TBA'. You are required to listen to the lecture recordings in your own time and place.
+
+
