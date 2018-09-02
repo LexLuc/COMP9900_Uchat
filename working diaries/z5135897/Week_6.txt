@@ -1,0 +1,2 @@
+This week, I re-organized the structure of the FAQ.aiml file, so that the chatbot can handle more comprehensive questions. And for demo in lab, 
+I created the test cases for testing. I also learned something about NLP to preprocess the data before it is loaded into the aiml file.
