@@ -1,0 +1,2 @@
+This week, I added new feature : train mode for our chatbot.  In this mode, the chatbot can learn new knowledge. The lecturer can add question-answer into chatbot knowledge base,
+so that students can make inquery without sending emails or going to office.
