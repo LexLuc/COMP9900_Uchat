@@ -1,0 +1,2 @@
+1. UI and layout design.
+2. Learning React(-style, router, data APIs, URL parameters)

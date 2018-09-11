@@ -1,0 +1,2 @@
+1. Learning html css JS ES6 Node express.
+2. Construct analysis and design(frontend).
