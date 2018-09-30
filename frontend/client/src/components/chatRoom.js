@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../App.css';
 import Message from './Message';
+//import test  from '../test';
+
 
 
 class ChatRoom extends React.Component {
@@ -39,6 +41,7 @@ class ChatRoom extends React.Component {
 
     submitMessage(e) {
         e.preventDefault();
+        //console.log(test)
         var question = ReactDOM.findDOMNode(this.refs.msg).value
         fetch('/api/questions/' + question)
             .then(res => res.json())
