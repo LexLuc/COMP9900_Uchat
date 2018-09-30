@@ -2,7 +2,7 @@
 Team work for 18s2, COMP9900
 
 ## Quick Start
-
+``` bash
 # Move to server file
 cd frontend
 
@@ -16,3 +16,4 @@ npm run client-install
 npm run dev
 
 # Server runs on http://localhost:5000 and client on http://localhost:3000
+```
