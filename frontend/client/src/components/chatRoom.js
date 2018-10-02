@@ -54,13 +54,9 @@ class ChatRoom extends React.Component {
                     }])
                 });
             })
-
-        //console.log(ReactDOM.findDOMNode(this.refs.msg).value);
-
-        
-
-        
-        
+        // this.setState(         
+        //     () => {ReactDOM.findDOMNode(this.refs.msg).value = "";
+        // })   
     }
     
     handleOnClick(txt){

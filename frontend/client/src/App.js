@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './index.css';
-//import ChatForm from '../src/components/chatForm.js';
+import './App.css';
 import ChatRoom from '../src/components/chatRoom.js';
 
 

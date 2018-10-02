@@ -1,9 +1,37 @@
 const express = require('express');
 const app = express();
+const natural = require('natural');
+//const tokenizer = new natural.WordTokenizer();
+//const stemmer = natural.PorterStemmer;
+
+const classifier = new natural.BayesClassifier();
+classifier.addDocument('i am long qqqq', 'buy');
+classifier.addDocument('buy the q\'s', 'buy');
+classifier.addDocument('short gold', 'sell');
+classifier.addDocument('sell gold', 'sell');
+classifier.addDocument('shorttttttttt gold', 'sell');
+classifier.addDocument('selereerrererl gold', 'sell');
+classifier.train();
+
+//const wordnet = new natural.WordNet();
 
 
 
 app.get('/api/questions/:question', (req, res) => {
+  console.log(classifier.classify('i am selereerrererl copper'));
+  console.log(classifier.getClassifications('i am selereerrererl copper'));
+
+  // wordnet.lookup('term', function(results) {
+  //   results.forEach(function(result) {
+  //       console.log('------------------------------------');
+  //       console.log(result.synsetOffset);
+  //       console.log(result.pos);
+  //       console.log(result.lemma);
+  //       console.log(result.synonyms);
+  //       console.log(result.pos);
+  //       console.log(result.gloss);
+  //   });
+  // });  
   const question = req.params.question;
   //const question = 'What is your name?';
 
