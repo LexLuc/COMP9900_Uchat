@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../App.css';
 import Message from './Message';
-//import test  from '../test';
 
 
 
@@ -54,9 +53,9 @@ class ChatRoom extends React.Component {
                     }])
                 });
             })
-        // this.setState(         
-        //     () => {ReactDOM.findDOMNode(this.refs.msg).value = "";
-        // })   
+    this.setState(         
+        () => {ReactDOM.findDOMNode(this.refs.msg).value = "";
+    })   
     }
     
     handleOnClick(txt){
@@ -66,11 +65,7 @@ class ChatRoom extends React.Component {
                 content: <p>{ReactDOM.findDOMNode(this.refs.msg).value}</p>,
                 img: "http://i.imgur.com/jDjFqixr.jpg",
             }])
-        },
-        //  () => {
-        //     ReactDOM.findDOMNode(this.refs.msg).value = "";
-        // }
-        );
+        });
     }
 
     render() {

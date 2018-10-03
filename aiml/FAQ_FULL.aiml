@@ -1,29 +1,4 @@
 
-	<category>
-	<pattern>MY NAME IS * AND I AM * YEARS OLD</pattern>
-	<template>Hi <star/>. I am also <star index="2" /> years old!</template>
-	</category>
-
-
-	<category>
-        <pattern>* CONTACTED * LECTURER *</pattern>
-        <template>You should give the lecturer five (5) working days to respond to your email, if the lecturer has not replied after these days then you may send them a reminder email. If you did not receive a reply within five working days after the reminder email then you can forward the email on to the CSE Student Office and we will try to contact the lecturer on your behalf.
-        </template>
-        </category>
-
-        <category>
-        <pattern>* CHANGE * PROGRAM*</pattern>
-        <template>If you are an undergraduate student currently studying at UNSW then you may apply for a program transfer via the two following methods:
-
-Internal Program Transfer (IPT) via myUNSW; or
-University Admission Centre (UAC) [only available to domestic students]
-For more information on the difference between IPT via myUNSW and UAC you should check the Faculty of Engineering website.
-
-If you are a postgraduate student please ensure you meet the requirements listed on the Faculty Enrolment Rules website. You can then submit a Postgraduate Internal Program Transfer request form.
-
-Your application will be assessed after release of results for the current semester. 
-        </template>
-        </category>
 
         <category>
         <pattern>* ENROL * TRANSFER *</pattern>
@@ -997,4 +972,4 @@ Cancellations that close to the start of semester are rare.
 
 
 
-</aiml>
+

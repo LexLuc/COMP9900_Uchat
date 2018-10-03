@@ -9,8 +9,8 @@ classifier.addDocument('i am long qqqq', 'buy');
 classifier.addDocument('buy the q\'s', 'buy');
 classifier.addDocument('short gold', 'sell');
 classifier.addDocument('sell gold', 'sell');
-classifier.addDocument('shorttttttttt gold', 'sell');
-classifier.addDocument('selereerrererl gold', 'sell');
+classifier.addDocument('shorttttttttt gold', 'haha');
+classifier.addDocument('selereerrererl gold', 'haha');
 classifier.train();
 
 //const wordnet = new natural.WordNet();
@@ -32,9 +32,8 @@ app.get('/api/questions/:question', (req, res) => {
   //       console.log(result.gloss);
   //   });
   // });  
-  const question = req.params.question;
-  //const question = 'What is your name?';
 
+  const question = req.params.question;
   var AIMLInterpreter = require('./AIMLInterpreter');
   var aimlInterpreter = new AIMLInterpreter({name:'WireInterpreter', age:'42'});
   aimlInterpreter.loadAIMLFilesIntoArray(['./test.aiml.xml']);
