@@ -83,7 +83,7 @@ class ChatRoom extends React.Component {
                     }
                 </ul>
                 <form className="input" onSubmit={(e) => this.submitMessage(e)}>
-                    <input type="text" ref="msg" />
+                    <input type="text" placeholder = "Input your questions, please" ref="msg" />
                     <input type="submit" onClick = {(txt) => this.handleOnClick(txt)}/>
                 </form>
             </div>
