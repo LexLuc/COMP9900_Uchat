@@ -12,7 +12,7 @@ class ChatRoom extends React.Component {
         this.state = {
             chats: [{
                 username: "question",
-                content: <p>I am a few questions about UNSW courses</p>,
+                content: <p>I have a few questions about UNSW courses</p>,
                 img: "http://i.imgur.com/jDjFqixr.jpg",
             }, {
                 username: "answer",
@@ -41,7 +41,7 @@ class ChatRoom extends React.Component {
     submitMessage(e) {
         e.preventDefault();
         //console.log(test)
-        var question = ReactDOM.findDOMNode(this.refs.msg).value
+        var question = ReactDOM.findDOMNode(this.refs.msg).value;
         fetch('/api/questions/' + question)
             .then(res => res.json())
             .then(json => {
@@ -53,9 +53,26 @@ class ChatRoom extends React.Component {
                     }])
                 });
             })
-    this.setState(         
-        () => {ReactDOM.findDOMNode(this.refs.msg).value = "";
-    })   
+        this.setState(         
+            () => {ReactDOM.findDOMNode(this.refs.msg).value = "";
+        })   
+    }
+
+    customizeSubmitMessage(e){
+        e.preventDefault();
+        console.log('here is customizeSubmitMessage')
+        let InputTextQuestion = ReactDOM.findDOMNode(this.refs.InputTextQuestion).value;
+        let InputTextAnswer = ReactDOM.findDOMNode(this.refs.InputTextAnswer).value;
+        let data = {'question': InputTextQuestion,'answer':InputTextAnswer}
+
+        fetch('/api/customizeQuestions', {
+            method: 'POST', 
+            body: JSON.stringify(data),
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        })
+        
     }
     
     handleOnClick(txt){
@@ -68,25 +85,54 @@ class ChatRoom extends React.Component {
         });
     }
 
+    plusOnClick(){
+        //console.log(document.getElementById("Customize"))
+        let onOff = document.getElementById("Customize").style.display;
+        if (onOff === "none"){
+            document.getElementById("Customize").style.display = "block";
+        }else{
+            document.getElementById("Customize").style.display = "none";
+        }
+    }
+
+
+
     render() {
         const username = "question";
         const { chats } = this.state;
 
         return (
-            <div className="chatroom">
-                <h3>UNSW Chatbot</h3>
-                <ul className="chats" ref="chats">
-                    {
-                        chats.map((chat) => 
-                            <Message chat={chat} user={username} />
-                        )
-                    }
-                </ul>
-                <form className="input" onSubmit={(e) => this.submitMessage(e)}>
-                    <input type="text" placeholder = "Input your questions, please" ref="msg" />
-                    <input type="submit" onClick = {(txt) => this.handleOnClick(txt)}/>
-                </form>
-            </div>
+            <div>
+                <div className="chatroom">
+                    <h3>UNSW Chatbot</h3>
+                    <ul className="chats" ref="chats">
+                        {
+                            chats.map((chat) => 
+                                <Message chat={chat} user={username} />
+                            )
+                        }
+                    </ul>
+                    <form className="input" onSubmit={(e) => this.submitMessage(e)}>
+                        <input type="text" placeholder = "Input your questions, please" ref="msg" />
+                        <input type="submit" onClick = {(txt) => this.handleOnClick(txt)}/>
+                        <button name="plus" onMouseOver = {this.plusOnClick}>
+                           +
+                        </button>
+                    </form>
+                    
+                </div>
+                        
+                <div id="Customize" style = {{display : "none"}}>
+                    <form className="CustomizeForm" onSubmit={(e) => this.customizeSubmitMessage(e)}>
+                        <input type="InputText" ref = "InputTextQuestion" placeholder = "Input your questions, please" />
+                        <input type="InputText" ref = "InputTextAnswer" placeholder = "Input your answers, please"  />
+                        <input type="submit"/>
+                        
+                    </form>
+                </div>
+                
+            
+        </div>
         );
     }
 }

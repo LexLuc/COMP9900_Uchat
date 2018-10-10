@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <aiml>
-    
-    i
+
+
     <category>
         <pattern>* CONTACTED * LECTURER *</pattern>
         <template>You should give the lecturer five (5) working days to respond to your email, if the lecturer has not replied after these days then you may send them a reminder email. If you did not receive a reply within five working days after the reminder email then you can forward the email on to the CSE Student Office and we will try to contact the lecturer on your behalf.
@@ -30,17 +30,6 @@
         </template>
     </category>
     
-    <category>
-        <pattern>* COURSE SELECTION *</pattern>
-        <template><srai>ADVISE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* ADIVSE * COURSE *</pattern>
-        <template><srai>ADVISE</srai>
-        </template>
-    </category>
     
     <category>
         <pattern>ADVISE</pattern>
@@ -51,25 +40,7 @@
             Students should also check the UNSW Computing Enrolment Advice page.
         </template>
     </category>
-    
-    <category>
-        <pattern>* OFFER * COURSES * WINTER *</pattern>
-        <template><srai>WINTER</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* OFFER * COURSES * JULY *</pattern>
-        <template><srai>WINTER</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* OFFER * COURSES * JUNE *</pattern>
-        <template><srai>WINTER</srai>
-        </template>
-    </category>
-    
+        
     <category>
         <pattern>WINTER</pattern>
         <template>UNSW Computing does NOT offer any courses during the Winter Break (June-July).
@@ -86,39 +57,13 @@
         </template>
     </category>
     
-    <category>
-        <pattern>* SUMMER COURSES *</pattern>
-        <template>Yes, Summer Semester enrolments open in October. UNSW Computing is offering:
-            
-            COMP2521 - Data Structures and Algorithms
-            
-            COMP9024 - Data Structures and Algorithms
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* CREDIT TRANSFER *</pattern>
-        <template><srai>CREDIT</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* TRANSFER CREDIT *</pattern>
-        <template><srai>CREDIT</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>* TRANSFER CREDITS *</pattern>
-        <template><srai>CREDIT</srai>
-        </template>
-    </category>
-    
+       
     <category>
         <pattern>CREDIT</pattern>
-        <template><srai>If you wish to receive transfer credit please ensure you meet the requirements listed on the Faculty Enrolment Rules website and the UNSW Transfer Credit Policy.
+        <template>If you wish to receive transfer credit please ensure you meet the requirements listed on the Faculty Enrolment Rules website and the UNSW Transfer Credit Policy.
             
             Undergraduate students: Submit an undergraduate Recognition of Prior Learning form. Include a copy of your official transcript and course outlines.
-            Postgraduate students: Submit a postgraduate Recognition of Prior Learning form. Please refer to the PG Transfer Credit Website for guidance.</srai>
+            Postgraduate students: Submit a postgraduate Recognition of Prior Learning form. Please refer to the PG Transfer Credit Website for guidance.
         </template>
     </category>
     
@@ -130,68 +75,16 @@
         </template>
     </category>
     
-    <category>
-        <pattern>* DROP * COURSES *</pattern>
-        <template><srai>DROP</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* PROGRAM LEAVE *</pattern>
-        <template><srai>DROP</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* LEAVE * PROGRAM *</pattern>
-        <template><srai>DROP</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* LEAVE * COURSE *</pattern>
-        <template><srai>DROP</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* DISCONTINUE * PROGRAM *</pattern>
-        <template><srai>DROP</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* Program Discontinuation *</pattern>
-        <template><srai>DROP</srai>
-        </template>
-    </category>
-    
+        
     <category>
         <pattern>DROP</pattern>
-        <template><srai>myUNSW doesn’t permit dropping all courses, to drop all courses you will need to apply for either:
+        <template>myUNSW doesn’t permit dropping all courses, to drop all courses you will need to apply for either:
             
             Program Leave(https://student.unsw.edu.au/program-leave) - if you intend to return your studies at a later date; or
-            Program Discontinuation(https://student.unsw.edu.au/program-discontinuation) - if you do not intend to return your study.</srai>
+            Program Discontinuation(https://student.unsw.edu.au/program-discontinuation) - if you do not intend to return your study.
         </template>
     </category>
     
-    <category>
-        <pattern>* DROP * COURSE * ENROLLED *</pattern>
-        <template>The census date for a teaching period is the last day to drop a course without having to pay the tuition fee or HECS/FEE-HELP contribution. If you drop a course on or before the relevant census date:
-            
-            You will not be financially liable for the course.
-            The course will not appear on your transcript.
-            The course will not be included in the calculation of your Weighted Average Mark (WAM).
-            The course will not be included in the calculation of your academic standing.
-            The Census date for Semester 1 is 31st March
-            
-            The Census date for Semester 2 is 31st August
-            
-            The Census date for Summer Semester is 8th January
-            
-            Please see this link(https://student.unsw.edu.au/enrolment-drop-course) for instructions on how to drop your course.
-        </template>
-    </category>
     
     <category>
         <pattern>* DROP * COURSE * CENSUS DATE</pattern>
@@ -199,29 +92,6 @@
         </template>
     </category>
     
-    <category>
-        <pattern>* PRE-REQUISITE * FAILE *</pattern>
-        <template><srai>PRE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* FAILE * PRE-REQUISITE *</pattern>
-        <template><srai>PRE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* PRE-REQUISITE * FAILED *</pattern>
-        <template><srai>PRE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* FAILED * PRE-REQUISITE *</pattern>
-        <template><srai>PRE</srai>
-        </template>
-    </category>
     
     <category>
         <pattern>PRE</pattern>
@@ -233,24 +103,7 @@
         </template>
     </category>
     
-    <category>
-        <pattern>* SWAP COURSES *</pattern>
-        <template><srai>SWAP</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* SWAP TUTORIAL TIMES *</pattern>
-        <template><srai>SWAP</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* SWAP * TUTORIAL TIME *</pattern>
-        <template><srai>SWAP</srai>
-        </template>
-    </category>
-    
+        
     <category>
         <pattern>SWAP</pattern>
         <template>If the course or tute class you are trying to swap to is full, you will not be able to swap using myUNSW. The CSE Office, cannot manually swap you into a class that is full due to Health and Safety regulations.
@@ -266,179 +119,26 @@
             Cancellations that close to the start of semester are rare.
         </template>
     </category>
-    
+        
     <category>
-        <pattern>* NO LECTURE ALLOCATED *</pattern>
-        <template><srai>ALLOCATE</srai>
+        <pattern>FULL</pattern>
+        <template>If the class you want is full, you may email an expression of interest to the Lecturer in Charge and they may consider adding more places. If the full course is core and you need it to graduate, you can submit a Full Class request form. Overall, please check myUNSW regularly in the event that someone drops the course. Note that myUNSW is the most up-to-date list of enrolments. There is generally a lot of enrolment movement around Week 1 of each Semester. Unfortunately, we do not over-enrol CSE courses and there is no waiting list.
         </template>
     </category>
-    
-    <category>
-        <pattern>* NO * ALLOCATION *</pattern>
-        <template><srai>ALLOCATE</srai>
-        </template>
-    </category>
-    
+
     <category>
         <pattern>ALLOCATE</pattern>
         <template>The allocation will be published as soon as they are known.
         </template>
     </category>
     
-    
-    
-    
-    
-    
-    
-    
-    <category>
-        <pattern>* FULL</pattern>
-        <template><srai>FULL</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>FULL *</pattern>
-        <template><srai>FULL</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* FULL *</pattern>
-        <template><srai>FULL</srai>
-        </template>
-    </category>
-    
-    
-    <category>
-        <pattern>FULL</pattern>
-        <template>If the class you want is full, you may email an expression of interest to the Lecturer in Charge and they may consider adding more places. If the full course is core and you need it to graduate, you can submit a Full Class request form. Overall, please check myUNSW regularly in the event that someone drops the course. Note that myUNSW is the most up-to-date list of enrolments. There is generally a lot of enrolment movement around Week 1 of each Semester. Unfortunately, we do not over-enrol CSE courses and there is no waiting list.</template>
-    </category>
-    
-    
-    
-    
-    <category>
-        <pattern>* WEB *</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* WEB</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>WEB *</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>WEB * TIMETABLE *</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* WEB * TIMETABLE</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>WEB * TIMETABLE</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* WEB * TIMETABLE *</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* TIMETABLE * WEB *</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>TIMETABLE * WEB *</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* TIMETABLE * WEB</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>TIMETABLE * WEB</pattern>
-        <template><srai>WEB TIMETABLE</srai>
-        </template>
-    </category>
-    
-    
+
     <category>
         <pattern>WEB TIMETABLE</pattern>
         <template>If you have enrolled in the web lecture then this will not be listed in your Class Timetable as there will be no room allocated to this lecture. If you scroll down the bottom of the Class Schedule Summary you will see the lecture listed as 'WEB' and under Day/Time you will see 'TBA'. You are required to listen to the lecture recordings in your own time and place.</template>
     </category>
     
-    
-    
-    <category>
-        <pattern>* REQUISITE WAIVED *</pattern>
-        <template><srai>REQUISITE WAIVED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* REQUISITE WAIVED</pattern>
-        <template><srai>REQUISITE WAIVED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>REQUISITE WAIVED *</pattern>
-        <template><srai>REQUISITE WAIVED</srai>
-        </template>
-    </category>
-    
-    
-    <category>
-        <pattern>* WAIVE REQUISITE *</pattern>
-        <template><srai>REQUISITE WAIVED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* WAIVE REQUISITE</pattern>
-        <template><srai>REQUISITE WAIVED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>WAIVE REQUISITE *</pattern>
-        <template><srai>REQUISITE WAIVED</srai>
-        </template>
-    </category>
-    
-    
-    
-    <category>
-        <pattern>* WAIVE * REQUISITE *</pattern>
-        <template><srai>REQUISITE WAIVED</srai>
-        </template>
-    </category>
-    
-    
+      
     <category>
         <pattern>REQUISITE WAIVED</pattern>
         <template>Waivers are generally not approved for core courses or in cases where the requisite is a core course in your program or in the case of postgraduate students where transfer credit or exemption is available. Please visit the CSE Requisite Waiver Policy page for more details.
@@ -459,100 +159,15 @@
     
     
     
-    <category>
-        <pattern>TIMETABLE CLASH</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    
-    <category>
-        <pattern>* TIMETABLE CLASH *</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* TIMETABLE * CLASH *</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    
-    <category>
-        <pattern>CLASH TIMETABLE</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* CLASH TIMETABLE *</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* CLASH * TIMETABLE *</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* CLASH * TIMETABLE *</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* CLASH *</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* CLASH</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>CLASH *</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>CLASH</pattern>
-        <template><srai>TIMETABLE CLASH</srai>
-        </template>
-    </category>
-    
+  
+ 
     <category>
         <pattern>TIMETABLE CLASH</pattern>
         <template>For all timetable clashes please ensure you meet the requirements listed on the Faculty Enrolment Rules website.
             Provided you meet all of the requirements you may submit a Timetable clash request form.</template>
     </category>
     
-    
-    
-    <category>
-        <pattern>* OVERLOAD *</pattern>
-        <template><srai>OVERLOAD</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* OVERLOAD</pattern>
-        <template><srai>OVERLOAD</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>OVERLOAD *</pattern>
-        <template><srai>OVERLOAD</srai>
-        </template>
-    </category>
-    
+ 
     
     <category>
         <pattern>OVERLOAD</pattern>
@@ -561,46 +176,7 @@
             You must also be aware of the financial and academic deadlines for dropping a course.</template>
     </category>
     
-    
-    
-    
-    
-    <category>
-        <pattern>* ENROLMENT DEADLINE *</pattern>
-        <template><srai>ENROLMENT DEADLINE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>ENROLMENT DEADLINE *</pattern>
-        <template><srai>ENROLMENT DEADLINE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* ENROLMENT DEADLINE</pattern>
-        <template><srai>ENROLMENT DEADLINE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* DEADLINE *</pattern>
-        <template><srai>ENROLMENT DEADLINE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>DEADLINE *</pattern>
-        <template><srai>ENROLMENT DEADLINE</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern> * DEADLINE</pattern>
-        <template><srai>ENROLMENT DEADLINE</srai>
-        </template>
-    </category>
-    
+
     <category>
         <pattern>ENROLMENT DEADLINE</pattern>
         <template>Managing your enrolment is your responsibility. You must be correctly enrolled in your courses by the enrolment deadline each semester. The deadline for adding courses is the end of the first week of the teaching period in which the course is offered. Adding courses after enrolments have closed is not normally permitted as it is required that students attend no less than 80% of classes.
@@ -609,79 +185,9 @@
             
             For all late enrolment requests please ensure you meet the requirements listed on the Faculty Enrolment Rules website. You should also discuss your late enrolment request with the Lecturer in Charge. If the Lecturer supports your request, please submit the late enrolment request to the CSE Student Office by email.
             
-            Please include; your student ID number, lecturer’s support, reason for the request and the class you wish to be enrolled in. Your request will then be considered and you will be notified of the outcome via email.
+            Please include; your student ID number, lecturers�� support, reason for the request and the class you wish to be enrolled in. Your request will then be considered and you will be notified of the outcome via email.
         </template>
     </category>
-    
-    
-    
-    
-    <category>
-        <pattern>* PROGRESSION CHECK * </pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>PROGRESSION CHECK * </pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* PROGRESSION CHECK</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* PROGRESSION *</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* PROGRESSION</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>PROGRESSION *</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* PROGRESS *</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* PROGRESS</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>PROGRESS *</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>PROGRESS</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>PROGRESSION</pattern>
-        <template><srai>PROGRESSION CHECK</srai>
-        </template>
-    </category>
-    
     
     
     <category>
@@ -692,58 +198,7 @@
         </template>
     </category>
     
-    
-    
-    
-    
-    <category>
-        <pattern>SUBSTITUTED</pattern>
-        <template><srai>COURSE SUBSTITUTED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* SUBSTITUTED</pattern>
-        <template><srai>COURSE SUBSTITUTED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>SUBSTITUTED *</pattern>
-        <template><srai>COURSE SUBSTITUTED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern> * SUBSTITUTED *</pattern>
-        <template><srai>COURSE SUBSTITUTED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>SUBSTITUTE</pattern>
-        <template><srai>COURSE SUBSTITUTED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern> * SUBSTITUTE * </pattern>
-        <template><srai>COURSE SUBSTITUTED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern> * SUBSTITUTE</pattern>
-        <template><srai>COURSE SUBSTITUTED</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>SUBSTITUTE *</pattern>
-        <template><srai>COURSE SUBSTITUTED</srai>
-        </template>
-    </category>
-    
+
     <category>
         <pattern>COURSE SUBSTITUTED</pattern>
         <template>The CSE student office does not generally permit substitution requests as core courses are necessary towards accreditation.
@@ -757,63 +212,9 @@
     </category>
     
     
-    
-    
-    
-    
-    
-    
-    
-    <category>
-        <pattern>SPECIAL</pattern>
-        <template><srai>SPECIAL CONSIDERATION</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern> * SPECIAL</pattern>
-        <template><srai>SPECIAL CONSIDERATION</srai>
-        </template>
-    </category>
-    
-    
-    <category>
-        <pattern>SPECIAL * </pattern>
-        <template><srai>SPECIAL CONSIDERATION</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern> * SPECIAL * </pattern>
-        <template><srai>SPECIAL CONSIDERATION</srai>
-        </template>
-    </category>
-    
-    
     <category>
         <pattern>SPECIAL CONSIDERATION</pattern>
         <template>You can apply for special consideration when illness or other circumstances beyond your control, interfere with your assessment performance. An application for Special Consideration together with supporting documentation must be submitted online within 3 working days of the assessment or the period covered by the supporting documentation. In exceptional circumstances an application may be accepted outside these limits. For further information please see the Special Consideration website.
-        </template>
-    </category>
-    
-    
-    
-    
-    <category>
-        <pattern> * SUPPLEMENTARY * </pattern>
-        <template><srai>SUPPLEMENTARY EXAM</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>SUPPLEMENTARY * </pattern>
-        <template><srai>SUPPLEMENTARY EXAM</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern> * SUPPLEMENTARY</pattern>
-        <template><srai>SUPPLEMENTARY EXAM</srai>
         </template>
     </category>
     
@@ -823,34 +224,6 @@
         <template>Please see the CSE website for Essential Advice for Students if you believe that you may be eligible to sit for the CSE supplementary exam. Please note, the supplementary exam for school managed written exams is scheduled for Wednesday 6th December at 8:45 AM. Students who have been nominated to sit for the exam by their Lecturer will receive the notification via email at least 1-2 days prior to the exam. It is advised that you make yourself available on the date and time listed above if you expect to sit for the exam.
         </template>
     </category>
-    
-    
-    
-    
-    <category>
-        <pattern> * REVIEW *</pattern>
-        <template><srai>REVIEW RESULTS</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern> * REVIEW</pattern>
-        <template><srai>REVIEW RESULTS</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>REVIEW *</pattern>
-        <template><srai>REVIEW RESULTS</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>REVIEW</pattern>
-        <template><srai>REVIEW RESULTS</srai>
-        </template>
-    </category>
-    
     
     <category>
         <pattern>REVIEW RESULTS</pattern>
@@ -884,143 +257,13 @@
     </category>
     
     <category>
-        <pattern>* REFERRAL * </pattern>
-        <template><srai>ACADEMIC STANDING</srai></template>
-    </category>
-    
-    <category>
-        <pattern>* REFERRAL</pattern>
-        <template><srai>ACADEMIC STANDING</srai></template>
-    </category>
-    
-    <category>
-        <pattern>REFERRAL * </pattern>
-        <template><srai>ACADEMIC STANDING</srai></template>
-    </category>
-    
-    <category>
-        <pattern>REFERRAL</pattern>
-        <template><srai>ACADEMIC STANDING</srai></template>
-    </category>
-    
-    
-    
-    <category>
-        <pattern>* PROBATION * </pattern>
-        <template><srai>ACADEMIC STANDING</srai></template>
-    </category>
-    
-    <category>
-        <pattern>* PROBATION</pattern>
-        <template><srai>ACADEMIC STANDING</srai></template>
-    </category>
-    
-    <category>
-        <pattern>PROBATION * </pattern>
-        <template><srai>ACADEMIC STANDING</srai></template>
-    </category>
-    
-    <category>
-        <pattern>PROBATION</pattern>
-        <template><srai>ACADEMIC STANDING</srai></template>
-    </category>
-    
-    
-    <category>
         <pattern>RESULT</pattern>
         <template>If you have received a WD grade, this means that your result has not been finalised. As we are not aware of the reasons you have received this grade, we would recommend that you contact the lecturer in charge of that course no more than 5 days after the release of results, as it might be necessary to organise further assessment.
             
             Please see the Student Results page for further information on any other grades you may have received but are not sure of the meaning of.
         </template>
     </category>
-    
-    <category>
-        <pattern>* WD * </pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    <category>
-        <pattern>* WD</pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    <category>
-        <pattern>WD * </pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    <category>
-        <pattern>* WC * </pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    <category>
-        <pattern>* WC</pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    <category>
-        <pattern>WC * </pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    <category>
-        <pattern>* WJ * </pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    <category>
-        <pattern>* WJ</pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    <category>
-        <pattern>WJ * </pattern>
-        <template><srai>RESULT</srai></template>
-    </category>
-    
-    
-    
-    <category>
-        <pattern> * </pattern>
-        <template>I have no answer for that.</template>
-    </category>
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-<!--    -->
-<!--    <category><pattern>WHAT IS YOUR NAME</pattern><template>I am a smart bot.</template></category>-->
-<!--    <category><pattern>MY NAME IS <set name='clientName'>*</set></pattern><template>Hey <get name='clientName'/>!</template></category>-->
-<!--    <category><pattern>MY NAME IS <set name='clientName'>*</set></pattern><template><get name='clientName'/> <random><li>Hey</li><li>Hi</li><li>Hello</li></random> !</template></category>-->
-<!--    <category><pattern>WHAT IS MY NAME</pattern><template>Your name is <get name='clientName'/></template></category>-->
-<!--    <category><pattern>WHO ARE YOU</pattern><template><srai>WHAT IS YOUR NAME</srai></template></category>-->
-<!--    <category><pattern>GIVE ME A LETTER</pattern><template><random><li>A</li><li>B</li><li>C</li></random></template></category>-->
-<!--    <category><pattern>TEST SRAI IN RANDOM</pattern><template><random><li><srai>WHAT IS YOUR NAME</srai></li><li><srai>WHAT IS MY NAME</srai></li></random></template></category>-->
-<!--    <category><pattern>TEST WILDCARD *</pattern><template>Thanks for testing!</template></category>-->
-<!--  <category><pattern>TEST MULTIPLE * WILDCARDS *</pattern><template><star index="2" /> <star index="1" /></template></category>-->
-<!--    <category><pattern>TEST SR TAG *</pattern><template><sr/></template></category>-->
-<!--    <category><pattern>TEST SR IN RANDOM *</pattern><template><random><li><sr/></li><li><srai>WHAT IS YOUR NAME</srai></li></random></template></category>-->
-<!--    <category><pattern>TEST THE STAR TAG *</pattern><template><star/></template></category>-->
-<!--    <category><pattern>TEST THE THAT TAG</pattern><template>I start testing that.</template></category>-->
-<!--    <category><pattern>TEST THAT-TAG. MATCH</pattern><that>I start testing that.</that><template>That matched quite well!</template></category>-->
-<!--    <category><pattern>TEST THAT-TAG. DONT MATCH</pattern><that>I found something.</that><template>Sorry, that did not match!</template></category>-->
-<!--    <category><pattern>YOU FEEL <set name='state'>*</set></pattern><template>I feel <get name='state'/>!</template></category>-->
-<!--    <category><pattern>HOW ARE YOU FEELING TODAY</pattern><template><condition name='state' value='happy'>I am happy!</condition><condition name='state' value='sad'>I am sad! </condition></template></category>-->
-<!--    <category><pattern>TELL ME ABOUT YOUR FEELINGS</pattern><template><condition><li name='state' value='happy'>I am happy!</li><li name='state' value='sad'>I am sad!</li><li>I kinda feel nothing <srai>WHAT IS YOUR NAME</srai></li></condition></template></category>-->
-<!--    <category><pattern>WHAT IS YOUR FEELING TODAY</pattern><template><condition name='state'><li value='happy'>Feeling happy! </li><li value='sad'>Feeling sad today </li><li>I don't feel anything </li></condition></template></category>-->
-<!--    <category><pattern>EXPLAIN *</pattern><template>Sorry, I do not have a clue</template></category>-->
-<!--    <category><pattern>I AM *</pattern><template>Text before random<random><li><think><set name='clientAge'><star/></set></think></li><li><think><set name='clientAge'>22</set></think></li></random> Text after random</template></category>-->
-<!--    <category><pattern>HOW OLD AM I</pattern><template>You are <get name='clientAge'/></template></category>-->
-<!--    <category><pattern>WHAT DO YOU KNOW ABOUT ME</pattern><template>Your name is <get name='clientName'/> and you are <get name='clientAge'/></template></category>-->
-<!--    <category><pattern>TEST CONDITION AND SRAI</pattern><template><condition name='state'><li value='happy'>Feeling happy! <srai>WHAT IS YOUR NAME</srai></li><li value='sad'>Feeling sad today <srai>WHAT IS MY NAME</srai></li><li>I don't feel anything <srai>HOW OLD AM I</srai></li></condition></template></category>-->
-<!--    <category><pattern>*</pattern><template>I found nothing.</template></category>-->
-
-</aiml>
+<category>
+    <pattern>WHAT</pattern>
+    <template>you are a silly dog</template>
+</category></aiml>

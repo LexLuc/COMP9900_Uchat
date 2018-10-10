@@ -160,3 +160,65 @@ p {
   background: #1EE494;
   color: #FFF;
 }
+
+
+.chatroom .input button[name="plus"] {
+  background: transparent;
+  border: 1px solid #1EE494;
+  height: 30px;
+  width: 70px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.chatroom .input button[name="plus"]:hover {
+  background: #1EE494;
+  color: #FFF;
+}
+
+#Customize .CustomizeForm {
+  
+  height: 60px;
+  width: 360px;
+  background: rgba(30, 228, 148, 0.7);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+#Customize .CustomizeForm input[type="InputText"] {
+  background: rgba(255, 255, 255, 0.5);
+  outline: 0;
+  border: 2px solid #1EE494;
+  padding: 0 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 10px;
+  height: 30px;
+  width: 40%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#Customize .CustomizeForm input[type="InputAnswer"] {
+  background: rgba(255, 255, 255, 0.5);
+  outline: 0;
+  border: 2px solid #1EE494;
+  padding: 0 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 10px;
+  height: 30px;
+  width: 270px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#Customize .CustomizeForm input[type="submit"]:hover {
+  background: #1EE494;
+  color: #FFF;
+}
