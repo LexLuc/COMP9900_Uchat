@@ -4,7 +4,7 @@ Team work for 18s2, COMP9900
 ## Quick Start
 ``` bash
 # Move to server file
-cd frontend
+cd aiml-WEB
 
 # Install dependencies for server
 npm install
