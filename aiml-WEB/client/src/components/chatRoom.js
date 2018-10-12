@@ -40,15 +40,16 @@ class ChatRoom extends React.Component {
 
     submitMessage(e) {
         e.preventDefault();
-        //console.log(test)
-        var question = ReactDOM.findDOMNode(this.refs.msg).value;
+        var question = ReactDOM.findDOMNode(this.refs.msg).value.replace(/\//g,' ');
+
+
         fetch('/api/questions/' + question)
             .then(res => res.json())
             .then(json => {
                 this.setState({
                     chats: this.state.chats.concat([{
                         username: "answer",
-                        content: <p>{json[question]}</p>,
+                        content: <p>{json['whatIsQuestion']}</p>,
                         img: "http://i.imgur.com/jDjFqixr.jpg",
                     }])
                 });
@@ -63,7 +64,8 @@ class ChatRoom extends React.Component {
         console.log('here is customizeSubmitMessage')
         let InputTextQuestion = ReactDOM.findDOMNode(this.refs.InputTextQuestion).value;
         let InputTextAnswer = ReactDOM.findDOMNode(this.refs.InputTextAnswer).value;
-        let data = {'question': InputTextQuestion,'answer':InputTextAnswer}
+        let data = {'question': InputTextQuestion,'answer':InputTextAnswer};
+      
 
         fetch('/api/customizeQuestions', {
             method: 'POST', 
@@ -72,6 +74,22 @@ class ChatRoom extends React.Component {
                 'Content-Type': 'application/json'
             }
         })
+            .then(res => res.json())
+            .then(json => {
+                if(json['ableToInsert'] === 0){
+                    alert('Sorry, you can not input this keywords. Please, try some other keywords!');
+                } 
+                else{
+                    alert('Thanks for your provide, our bot have learnt more new knowledge');
+                }
+            })
+
+        this.setState(         
+            () => {
+                ReactDOM.findDOMNode(this.refs.InputTextQuestion).value = "";
+                ReactDOM.findDOMNode(this.refs.InputTextAnswer).value = "";
+
+        }) 
         
     }
     
@@ -124,14 +142,12 @@ class ChatRoom extends React.Component {
                         
                 <div id="Customize" style = {{display : "none"}}>
                     <form className="CustomizeForm" onSubmit={(e) => this.customizeSubmitMessage(e)}>
-                        <input type="InputText" ref = "InputTextQuestion" placeholder = "Input your questions, please" />
-                        <input type="InputText" ref = "InputTextAnswer" placeholder = "Input your answers, please"  />
+                        <input type="InputText" ref = "InputTextQuestion" placeholder = "Customize Question" />
+                        <input type="InputText" ref = "InputTextAnswer" placeholder = "Customize Answer"  />
                         <input type="submit"/>
                         
                     </form>
-                </div>
-                
-            
+                </div>    
         </div>
         );
     }

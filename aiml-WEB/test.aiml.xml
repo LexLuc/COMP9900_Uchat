@@ -263,7 +263,4 @@
             Please see the Student Results page for further information on any other grades you may have received but are not sure of the meaning of.
         </template>
     </category>
-<category>
-    <pattern>WHAT</pattern>
-    <template>you are a silly dog</template>
-</category></aiml>
+</aiml>
