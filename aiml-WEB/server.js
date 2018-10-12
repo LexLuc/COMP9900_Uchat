@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 const js2xmlparser = require("js2xmlparser");
 const classifier = new natural.BayesClassifier();
 const fs = require('fs');
-const XMLfilename = 'test.aiml.xml';
+const XMLfilename = 'Website.aiml.xml';
+const trainFilename = 'trainList.json';
 const train = require('./trainList.json');
 
 
@@ -16,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended : true}));
 // get request
 app.get('/api/questions/:question', (req, res) => {
 
-  const trainList = train[0].FAQ_Dataset;
+  const trainList = train;
   for (let i = 0; i < trainList.length; i ++){
     for (let j = 0; j < trainList[i].answer.length; j ++){
       classifier.addDocument(trainList[i].answer[j],trainList[i].question);
@@ -27,19 +28,16 @@ app.get('/api/questions/:question', (req, res) => {
   // initial AIMLInterpreter and open aiml files
   var AIMLInterpreter = require('./AIMLInterpreter');
   var aimlInterpreter = new AIMLInterpreter();
-  aimlInterpreter.loadAIMLFilesIntoArray(['./test.aiml.xml']);
+  aimlInterpreter.loadAIMLFilesIntoArray(['./Website.aiml.xml']);
 
   var question = req.params.question;
   natural.PorterStemmer.attach();
   var tokenizeQuestion = question.tokenizeAndStem();
   console.log(tokenizeQuestion)
 
-
   // find the nearest possible synonmys
   classifier.train();
   questionFixed = classifier.getClassifications(tokenizeQuestion)[0].label;
-  console.log(classifier.getClassifications(tokenizeQuestion).slice(0,4));
-  console.log(questionFixed)
   
   // get the answers into json format 
   var callback = function(answer){
@@ -59,14 +57,11 @@ app.post('/api/customizeQuestions', (req, res) => {
   let xmlCustomize = {'pattern':pattern, 'template':template};
   const elementXML = js2xmlparser.parse("category", xmlCustomize);
 
-
   // check if the input data whether we have already set in database
-  const trainList = train[0].FAQ_Dataset;
+  const trainList = train;
   var ifInsert = 1;
   for (let i = 0; i < trainList.length; i ++){
-    console.log(trainList[i].question,pattern)
     if (trainList[i].question === pattern){
-      console.log('can not write into files')
       let postRes = {};
       ifInsert = 0;
       postRes['ableToInsert'] = ifInsert;
@@ -74,6 +69,21 @@ app.post('/api/customizeQuestions', (req, res) => {
     }
   };
 
+  // train the customize data
+  fs.readFile(trainFilename, 'utf8', function readFileCallback(err, data){
+    if (err){
+        console.log(err);
+    } else {
+    obj = JSON.parse(data); //now it an object
+    var tokenizeQuestion = template.split(' ');
+    tokenizeQuestion.push(req.body.question.toLowerCase());
+    obj.push({"question": pattern, "answer":tokenizeQuestion}); //add some data
+    json = JSON.stringify(obj); //convert it back to json
+    fs.writeFile(trainFilename, json, 'utf8', function(err){
+      if(err) throw err;
+    }); // write it back 
+    }
+  });
 
   // write the customize data into aiml database
   fs.readFile(XMLfilename, "utf8", function(err, data) {
@@ -89,17 +99,8 @@ app.post('/api/customizeQuestions', (req, res) => {
       return (res.json(postRes));
     }) 
    });
-   
-
-
-
 });
 
 const port = 5000;
 
 app.listen(port, () => `Server running on port ${port}`);
-
-    // if(dataPre.slice(22,).includes(pattern)){
-    //   console.log(dataPre.slice(22,).indexOf(pattern));
-    //   console.log(dataPre.slice(22+3885,22+3885+33))
-    // }

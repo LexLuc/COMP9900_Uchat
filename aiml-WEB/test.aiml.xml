@@ -263,4 +263,22 @@
             Please see the Student Results page for further information on any other grades you may have received but are not sure of the meaning of.
         </template>
     </category>
-</aiml>
+<category>
+    <pattern>LOVEYCCCCCC</pattern>
+    <template>dictionary cola hello laptop</template>
+</category><category>
+    <pattern>WEATHER</pattern>
+    <template>sunny windy rainy</template>
+</category><category>
+    <pattern>DROP</pattern>
+    <template>hah</template>
+</category><category>
+    <pattern>DROP</pattern>
+    <template>hahaha</template>
+</category><category>
+    <pattern>WEALTH</pattern>
+    <template>sunny rain </template>
+</category><category>
+    <pattern>HONG</pattern>
+    <template>november december</template>
+</category></aiml>

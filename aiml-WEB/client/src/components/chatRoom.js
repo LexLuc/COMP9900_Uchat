@@ -61,7 +61,6 @@ class ChatRoom extends React.Component {
 
     customizeSubmitMessage(e){
         e.preventDefault();
-        console.log('here is customizeSubmitMessage')
         let InputTextQuestion = ReactDOM.findDOMNode(this.refs.InputTextQuestion).value;
         let InputTextAnswer = ReactDOM.findDOMNode(this.refs.InputTextAnswer).value;
         let data = {'question': InputTextQuestion,'answer':InputTextAnswer};
