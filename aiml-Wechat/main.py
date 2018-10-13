@@ -1,11 +1,11 @@
 import aiml
 
-
+PATH_KNOWLEDGE_BASE = 'FAQ_FULL.aiml'
 
 #Create the kernel and learn AIML files
 kernel = aiml.Kernel()
-kernel.learn("std-startup.xml")
-kernel.respond("load aiml b")
+kernel.learn(PATH_KNOWLEDGE_BASE)
+kernel.respond("Hi")
 
 
 #while True:
