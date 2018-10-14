@@ -9,9 +9,11 @@ while True:
 
     input_text = input('Input: ')
     input_text = input_text.replace('?', ' qeustion mark ')
-    input_text = input_text.replace('.', ' exclamation point ')
+    input_text = input_text.replace('!', ' exclamation point ')
     input_text = input_text.replace('.', ' period point ')
     input_text = input_text.replace('\'', ' apostrophe ')
+    input_text = input_text.replace('-', '')
+    
     
     print(kernel.respond(input_text))
 
