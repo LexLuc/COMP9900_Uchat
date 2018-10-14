@@ -18,9 +18,11 @@ app.use(bodyParser.urlencoded({ extended : true}));
 app.get('/api/questions/:question', (req, res) => {
 
   const trainList = train;
+  var trainAnswerListCheckIfExsit = [];
   for (let i = 0; i < trainList.length; i ++){
     for (let j = 0; j < trainList[i].answer.length; j ++){
       classifier.addDocument(trainList[i].answer[j],trainList[i].question);
+      trainAnswerListCheckIfExsit.push(trainList[i].answer[j]);
     }
   };
   var questionFixed = ''; //synonmys initial
@@ -33,20 +35,53 @@ app.get('/api/questions/:question', (req, res) => {
   var question = req.params.question;
   natural.PorterStemmer.attach();
   var tokenizeQuestion = question.tokenizeAndStem();
-  console.log(tokenizeQuestion)
+  console.log(tokenizeQuestion);
 
-  // find the nearest possible synonmys
-  classifier.train();
-  questionFixed = classifier.getClassifications(tokenizeQuestion)[0].label;
-  
-  // get the answers into json format 
-  var callback = function(answer){
-    var goodanswer = {};
-    goodanswer['whatIsQuestion'] = answer;
-    return (res.json(goodanswer));
-  };
-  aimlInterpreter.findAnswerInLoadedAIMLFiles(questionFixed,callback);
+  // check if it has no answer 
+  var checkIfNoAnswer = false;
+  for (let i = 0;i< tokenizeQuestion.length; i ++){
+    for (let j = 0;j< trainAnswerListCheckIfExsit.length; j ++){
+      if(trainAnswerListCheckIfExsit[j].includes(tokenizeQuestion[i])){
+        checkIfNoAnswer = true;
+      }
+    }
+  }
+   
+  if (checkIfNoAnswer === true){
+    // find the nearest possible synonmys
+    classifier.train();
+    questionFixed = classifier.getClassifications(tokenizeQuestion)[0].label;
+    console.log(classifier.getClassifications(tokenizeQuestion).slice(0,4));
+    
+    // get the answers into json format 
+    var callback = function(answer){
+      var goodanswer = {};
+      goodanswer['whatIsQuestion'] = answer;
+      return (res.json(goodanswer));
+    };
+    aimlInterpreter.findAnswerInLoadedAIMLFiles(questionFixed,callback);
+  }
+
+  // when it comes to no answer from aiml
+  else{
+    //console.log('No answer area');
+    let data = {'question': req.params.question};
+    fetch('http://localhost:8080/api/dailychat', {
+      method: 'POST', 
+      body: JSON.stringify(data),
+      headers:{
+          'Content-Type': 'application/json'
+      }
+    })
+    .then(res => res.json())
+    .then(json => {
+      return(json)
+    })
+
+  }
+
 });
+
 
 
 app.post('/api/customizeQuestions', (req, res) => {
