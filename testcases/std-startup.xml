@@ -13,8 +13,6 @@
         <template>
             
 
-            <learn>ai.aiml</learn>
-            <learn>sex.aiml</learn>
             <learn>FAQ_FULL_v3.aiml</learn>
             <!-- You can add more aiml files here -->
             <!--<learn>more_aiml.aiml</learn>-->
