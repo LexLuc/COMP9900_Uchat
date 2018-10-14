@@ -12,6 +12,6 @@ while True:
     input_text = input_text.replace('.', ' exclamation point ')
     input_text = input_text.replace('.', ' period point ')
     input_text = input_text.replace('\'', ' apostrophe ')
-    print(input_text)
     
     print(kernel.respond(input_text))
+
