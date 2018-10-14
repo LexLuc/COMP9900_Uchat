@@ -77,7 +77,7 @@
 	</category>
 
 	<category>
-	<pattern>DROP COURSE WAY</pattern>
+	<pattern>DROP ALL COURSE</pattern>
 	<template>
 	myUNSW doesn’t permit dropping all courses, to drop all courses you will need to apply for either:
 
@@ -88,7 +88,7 @@
 
 
 	<category>
-	<pattern>DROP COURSE</pattern>
+	<pattern>DROP COURSE DATE</pattern>
 	<template>
 	The census date for a teaching period is the last day to drop a course without having to pay the tuition fee or HECS/FEE-HELP contribution. If you drop a course on or before the relevant census date:
 
