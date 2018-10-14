@@ -8,7 +8,7 @@ const fs = require('fs');
 const XMLfilename = 'Website.aiml.xml';
 const trainFilename = 'trainList.json';
 const train = require('./trainList.json');
-
+const fetch = require('node-fetch')
 
 // for bodyparser
 app.use(bodyParser.json());
@@ -35,7 +35,6 @@ app.get('/api/questions/:question', (req, res) => {
   var question = req.params.question;
   natural.PorterStemmer.attach();
   var tokenizeQuestion = question.tokenizeAndStem();
-  console.log(tokenizeQuestion);
 
   // check if it has no answer 
   var checkIfNoAnswer = false;
@@ -51,7 +50,6 @@ app.get('/api/questions/:question', (req, res) => {
     // find the nearest possible synonmys
     classifier.train();
     questionFixed = classifier.getClassifications(tokenizeQuestion)[0].label;
-    console.log(classifier.getClassifications(tokenizeQuestion).slice(0,4));
     
     // get the answers into json format 
     var callback = function(answer){
@@ -64,9 +62,8 @@ app.get('/api/questions/:question', (req, res) => {
 
   // when it comes to no answer from aiml
   else{
-    //console.log('No answer area');
     let data = {'question': req.params.question};
-    fetch('http://localhost:8080/api/dailychat', {
+    fetch('http://127.0.0.1:8080/api/dailychat', {
       method: 'POST', 
       body: JSON.stringify(data),
       headers:{
@@ -75,7 +72,8 @@ app.get('/api/questions/:question', (req, res) => {
     })
     .then(res => res.json())
     .then(json => {
-      return(json)
+      let output = {'whatIsQuestion': json['whatIsQuestion']};
+      return (res.json(output));
     })
 
   }
