@@ -7,6 +7,5 @@ def reply_answer(msg):
     return (ans)
 
 itchat.auto_login(enableCmdQR=1)
-#itchat.send('hello, a bot', 'Stephen')
 itchat.run()
 
