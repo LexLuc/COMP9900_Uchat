@@ -1464,6 +1464,31 @@
 
 
 	<category>
+	<pattern>* WAIVER * REQUISITE *</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* WAIVERS * REQUISITE *</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* WAIVER * REQUISITE</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* WAIVERS * REQUISITE</pattern>
+	<template><srai>REQUISITE WAIVED</srai>
+	</template>
+	</category>
+
+
+	<category>
 	<pattern>REQUISITE WAIVED</pattern>
 	<template>Waivers are generally not approved for core courses or in cases where the requisite is a core course in your program or in the case of postgraduate students where transfer credit or exemption is available. Please visit the CSE Requisite Waiver Policy page for more details.
 	If the requisite is not a core course and you'd like it to be waived to enrol in an Elective, requisite waivers may be considered on the basis of the following:
