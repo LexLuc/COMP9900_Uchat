@@ -65,6 +65,55 @@
 
 
 	<category>
+	<pattern>* FIND LECTURER * </pattern>
+	<template><srai>CONTACT</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* IN TOUCH WITH * LECTURER *</pattern>
+	<template><srai>CONTACT</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* IN TOUCH WITH * LECTURER</pattern>
+	<template><srai>CONTACT</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* CALL *</pattern>
+	<template><srai>CONTACT</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* CALLED *</pattern>
+	<template><srai>CONTACT</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* PHONE *</pattern>
+	<template><srai>CONTACT</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* LECTURER APOSTROPHE *</pattern>
+	<template><srai>CONTACT</srai>
+	</template>
+	</category>
+
+
+
+	<category>
 	<pattern>CONTACT</pattern>
 	<template>You should give the lecturer five (5) working days to respond to your email, if the lecturer has not replied after these days then you may send them a reminder email. If you did not receive a reply within five working days after the reminder email then you can forward the email on to the CSE Student Office and we will try to contact the lecturer on your behalf.</template>
 	</category>
@@ -186,6 +235,15 @@
 	</template>
 	</category>
 
+
+
+	<category>
+	<pattern>* TRANSFER * PROGRAM * </pattern>
+	<template><srai>CHANGE</srai>
+	</template>
+	</category>
+
+
 	<category>
 	<pattern>CHANGE</pattern>
 	<template>If you are an undergraduate student currently studying at UNSW then you may apply for a program transfer via the two following methods:
@@ -254,6 +312,27 @@
 	<template><srai>COURSE SELECTION</srai>
 	</template>
 	</category>
+
+	<category>
+	<pattern>* TIPS  *</pattern>
+	<template><srai>COURSE SELECTION</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* RECOMMENDATIONS *</pattern>
+	<template><srai>COURSE SELECTION</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* RECOMMENDATION *</pattern>
+	<template><srai>COURSE SELECTION</srai>
+	</template>
+	</category>
+
 
 
 	<category>
@@ -365,11 +444,17 @@
 	</category>
 
 	<category>
-	<pattern>* COURSES * OPTIONS *</pattern>
+	<pattern>* COURSES SELECTION *</pattern>
 	<template><srai>COURSE SELECTION</srai>
 	</template>
 	</category>
 
+
+	<category>
+	<pattern>* COURSES SELECTION</pattern>
+	<template><srai>COURSE SELECTION</srai>
+	</template>
+	</category>
 
 
 
@@ -475,7 +560,7 @@
 
 
 	<category>
-	<pattern>* SUMMER VOCATION *</pattern>
+	<pattern>* SUMMER VACATION *</pattern>
 	<template><srai>SUMMER BREAK</srai>
 	</template>
 	</category>
@@ -603,6 +688,32 @@
 
 
 	<category>
+	<pattern>* ADVANCED STANDING</pattern>
+	<template><srai>CREDIT TRANSFER</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* ADVANCED STANDING *</pattern>
+	<template><srai>CREDIT TRANSFER</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* PREVIOUSLY *</pattern>
+	<template><srai>CREDIT TRANSFER</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* PREVIOUS *</pattern>
+	<template><srai>CREDIT TRANSFER</srai>
+	</template>
+	</category>
+
+
+	<category>
 	<pattern>CREDIT TRANSFER</pattern>
 	<template>If you wish to receive transfer credit please ensure you meet the requirements listed on the Faculty Enrolment Rules website and the UNSW Transfer Credit Policy.
 
@@ -646,6 +757,21 @@
 	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
 	</template>
 	</category>
+
+
+	<category>
+	<pattern>* DROP ALL COURSES</pattern>
+	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* DROP ALL COURSES *</pattern>
+	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
+	</template>
+	</category>
+
 
 	<category>
 	<pattern>* DROP * ALL COURSES *</pattern>
@@ -700,6 +826,39 @@
 
 	<category>
 	<pattern>* PROGRAM LEAVE</pattern>
+	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* LEAVE * PROGRAM *</pattern>
+	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* LEAVE * PROGRAM</pattern>
+	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* LEAVE PROGRAM *</pattern>
+	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* LEAVE PROGRAM</pattern>
+	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* DISCONTINUE *</pattern>
 	<template><srai>DROP LEAVE DISCOUNTINUE</srai>
 	</template>
 	</category>
@@ -850,21 +1009,21 @@
 
 
 	<category>
-	<pattern>* FAIL * PRE-REQUISITE *</pattern>
+	<pattern>* FAIL * PREREQUISITE *</pattern>
 	<template><srai>FAILED PREREQUISITE</srai>
 	</template>
 	</category>
 
 
 	<category>
-	<pattern>* FAILED * PRE-REQUISITE *</pattern>
+	<pattern>* FAILED * PREREQUISITE *</pattern>
 	<template><srai>FAILED PREREQUISITE</srai>
 	</template>
 	</category>
 
 
 	<category>
-	<pattern>* PRE-REQUISITE *</pattern>
+	<pattern>* PREREQUISITE *</pattern>
 	<template><srai>FAILED PREREQUISITE</srai>
 	</template>
 	</category>
@@ -877,14 +1036,14 @@
 	</category>
 
 	<category>
-	<pattern>* PRE-REQUEST *</pattern>
+	<pattern>* PREREQUEST *</pattern>
 	<template><srai>FAILED PREREQUISITE</srai>
 	</template>
 	</category>
 
 
 	<category>
-	<pattern>* PREREQUEST *</pattern>
+	<pattern>* PREREQUISITE *</pattern>
 	<template><srai>FAILED PREREQUISITE</srai>
 	</template>
 	</category>
@@ -1031,23 +1190,69 @@
 	</category>
 
 
+
+
+
 	<category>
-	<pattern>* FULL</pattern>
+	<pattern>* CLASS * FULL *</pattern>
 	<template><srai>FULL</srai>
 	</template>
 	</category>
 
 	<category>
-	<pattern>FULL *</pattern>
+	<pattern>* CLASS * FULL</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+
+
+
+	<category>
+	<pattern>* FULL CLASS *</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* FULL * CLASS *</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+
+
+	<category>
+	<pattern>* COURSE * FULL *</pattern>
 	<template><srai>FULL</srai>
 	</template>
 	</category>
 
 	<category>
-	<pattern>* FULL *</pattern>
+	<pattern>* COURSE * FULL</pattern>
 	<template><srai>FULL</srai>
 	</template>
 	</category>
+
+
+
+
+	<category>
+	<pattern>* FULL COURSE *</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>* FULL * COURSE *</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+
+
 
 	<category>
 	<pattern>* NO PLACE</pattern>
