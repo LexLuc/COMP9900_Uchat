@@ -1192,6 +1192,25 @@
 
 
 
+	<category>
+	<pattern>* FULL *</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+
+	<category>
+	<pattern>FULL *</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
+	<category>
+	<pattern>* FULL</pattern>
+	<template><srai>FULL</srai>
+	</template>
+	</category>
+
 
 	<category>
 	<pattern>* CLASS * FULL *</pattern>
