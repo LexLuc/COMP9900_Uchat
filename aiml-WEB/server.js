@@ -36,13 +36,18 @@ app.get('/api/questions/:question', (req, res) => {
   natural.PorterStemmer.attach();
   var tokenizeQuestion = question.tokenizeAndStem();
 
+
   // check if it has no answer 
   var checkIfNoAnswer = false;
   for (let i = 0;i< tokenizeQuestion.length; i ++){
-    for (let j = 0;j< trainAnswerListCheckIfExsit.length; j ++){
-      if(trainAnswerListCheckIfExsit[j].includes(tokenizeQuestion[i])){
-        checkIfNoAnswer = true;
-      }
+    for (let j = 0;j< trainAnswerListCheckIfExsit.length; j ++){    
+      let attentionSpace = trainAnswerListCheckIfExsit[j].split(' ');
+      for (let z = 0;z < attentionSpace.length ;z ++){
+        if(attentionSpace[z] === tokenizeQuestion[i]){
+          console.log(attentionSpace[z])
+          checkIfNoAnswer = true;
+        }
+      } 
     }
   }
    

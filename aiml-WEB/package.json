@@ -13,11 +13,13 @@
   "author": "Brad Traversy",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^1.14.6"
+    "nodemon": "^1.14.6",
+    "ws": "3.3.2"
   },
   "dependencies": {
     "aimlinterpreter": "^0.1.7",
     "concurrently": "^3.5.1",
+    "dom-js": "0.0.9",
     "express": "^4.16.2",
     "js2xmlparser": "^3.0.0",
     "natural": "^0.6.1",

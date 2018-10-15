@@ -12,12 +12,16 @@ class ChatRoom extends React.Component {
         this.state = {
             chats: [{
                 username: "question",
-                content: <p>I have a few questions about UNSW courses</p>,
-                img: "http://i.imgur.com/jDjFqixr.jpg",
+                content: <p>I have a few questions about CSE courses</p>,
+                //img: "./Wechatimage.jpeg",
+                img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJfI-7UBmoaAuM3izqPYZwm132O9TfDEFt6hvWdI4_cRaFqog",
             }, {
                 username: "answer",
-                content: <p>Hi, I am a UNSW Chatbot. I can give you any answers related to CoursesFAQ</p>,
-                img: "http://i.imgur.com/jDjFqixr.jpg",
+                content: <p>Hi, I am a UNSW Chatbot. I can give you any answers related to CSE CoursesFAQ</p>,
+                //img: "http://i.imgur.com/jDjFqixr.jpg",
+                //img: "./Wechatimage.jpeg",
+                img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJfI-7UBmoaAuM3izqPYZwm132O9TfDEFt6hvWdI4_cRaFqog",
+                //<img></img>
                 
             }],
             
@@ -50,7 +54,7 @@ class ChatRoom extends React.Component {
                     chats: this.state.chats.concat([{
                         username: "answer",
                         content: <p>{json['whatIsQuestion']}</p>,
-                        img: "http://i.imgur.com/jDjFqixr.jpg",
+                        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJfI-7UBmoaAuM3izqPYZwm132O9TfDEFt6hvWdI4_cRaFqog",
                     }])
                 });
             })
@@ -97,7 +101,7 @@ class ChatRoom extends React.Component {
             chats: this.state.chats.concat([{
                 username: "question",
                 content: <p>{ReactDOM.findDOMNode(this.refs.msg).value}</p>,
-                img: "http://i.imgur.com/jDjFqixr.jpg",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJfI-7UBmoaAuM3izqPYZwm132O9TfDEFt6hvWdI4_cRaFqog",
             }])
         });
     }
@@ -141,8 +145,8 @@ class ChatRoom extends React.Component {
                         
                 <div id="Customize" style = {{display : "none"}}>
                     <form className="CustomizeForm" onSubmit={(e) => this.customizeSubmitMessage(e)}>
-                        <input type="InputText" ref = "InputTextQuestion" placeholder = "Customize Question" />
-                        <input type="InputText" ref = "InputTextAnswer" placeholder = "Customize Answer"  />
+                        <input type="InputText" ref = "InputTextQuestion" placeholder = "Question" />
+                        <input type="InputText" ref = "InputTextAnswer" placeholder = "Answer"  />
                         <input type="submit"/>
                         
                     </form>
