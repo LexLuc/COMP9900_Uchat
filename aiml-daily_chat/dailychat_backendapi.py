@@ -17,5 +17,13 @@ def my_form_post():
 if __name__ == '__main__':
     kernel = aiml.Kernel()
     kernel.learn(os.sep.join(['alice', '*.aiml']))
+
+    property_file = 'bot.properties'
+    with open(property_file, 'r') as f:
+        for line in f:
+            pList = line.split('=')
+            key = pList[0]
+            value = pList[1]
+            kernel.setBotPredicate(key, value)
     
     app.run(host = "127.0.0.1", port=8080)
