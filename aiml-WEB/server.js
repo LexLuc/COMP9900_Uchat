@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended : true}));
 // get request
 app.get('/api/questions/:question', (req, res) => {
 
+  console.log('object')
   const trainList = train;
   var trainAnswerListCheckIfExsit = [];
   for (let i = 0; i < trainList.length; i ++){
@@ -44,7 +45,6 @@ app.get('/api/questions/:question', (req, res) => {
       let attentionSpace = trainAnswerListCheckIfExsit[j].split(' ');
       for (let z = 0;z < attentionSpace.length ;z ++){
         if(attentionSpace[z] === tokenizeQuestion[i]){
-          console.log(attentionSpace[z])
           checkIfNoAnswer = true;
         }
       } 
