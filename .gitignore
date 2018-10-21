@@ -4,3 +4,6 @@
 # Ignore pycache
 aiml-Wechat/__pycache__/
 *.py[cod]
+
+# Ignore virtual env
+COMP9900-venv
